@@ -27,11 +27,6 @@ jobs:
       - name: Run Tests
         run: pytest -v
 
-      - name: Build App
-        run: |
-          echo "Building the Python app..."
-          python app.py
-
   deploy:
     needs: build-test
     runs-on: ubuntu-latest
