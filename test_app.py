@@ -1,6 +1,6 @@
 from app import add_numbers
 import pytest
-from calculator import multiply, divide
+from app import multiply, divide
 
 def test_multiply():
     assert multiply(3, 4) == 12
